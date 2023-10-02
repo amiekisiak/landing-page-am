@@ -1,11 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Simple lightbox CSS -->
+    <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/icons/favicon-16x16.png"
+    />
+
+    <title>JabTV Landing Page</title>
+  </head>
+  <div>
+    <!-- Navbar -->
+
+    <nav>
+        <img src="/images/Consulting (3).png" class="logo"><img/>
+
+        <ul>
+            <li class="nav-item">
+              <a href="#about" class="nav-link" id="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#stars" class="nav-link" id="nav-link">Boxing Stars</a>
+            </li>
+            <li class="nav-item">
+              <a href="#stakeholders" class="nav-link" id="nav-link"
+                >stakeholders</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#sub" class="nav-link" id="nav-link">Subscribe</a>
+            </li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+
+
+
+ <!-- Dark/light theme switcher -->
+
+ <div class="theme-switch">
+    <input type="checkbox" class="checkbox" id="checkbox" />
+    <label for="checkbox" class="label">
+       <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+       <ion-icon name="moon-outline" class="moon"></ion-icon>
+       <div class="switcher"></div>
+    </label>
+</div>
+
+    <!-- Contact Form -->
+
     
-</body>
+
+     
+      <div class = "container">
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> 
+    <!-- Hero section -->
+
+    <section class="hero">
+      <div class="intro-text">
+        <h1>
+          <span class="hear"> You can Hear the Jabs </span> <br />
+          <span class="connecting"> Connecting</span>
+        </h1>
+        <p>
+          An online streaming platform for boxing matches <br />
+          We also dedicate some special time to throwbacks cuz old is gold
+        </p>
+        <a class="btn red" href="#">Learn More</a>
+        <a class="btn blue" href="#">Subscribe</a>
+      </div>
+      <div class="i-frame">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/sUmM_PFpsvQ"
+          title="YouTube video player"
+          frameborder="10"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+        <div class="stand-1"></div>
+        <div class="stand-2"></div>
+      </div>
+    </section>
+
+    <!-- About section -->
+
+    <section class="about" id="about">
+      <h3>Watch the Jabs</h3>
+      <p>
+        Our primary objective is to bring live boxing matches to fans all around
+        the world
+      </p>
+
+      <h3>Its not About the Fights Alone!</h3>
+      <p>
+        We also air documentaries specially made for the greats, lifestyle of
+        boxers, news, and more.
+      </p>
+</section>
+
+    <!-- Lightbox image gallery -->
+    
+
+
+    <!-- Web page script -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons CDN -->
+    <script src="./js/script.js" ></script>
+
+    <!-- Simple lightbox -->
+    <script src="assets/js/simple-lightbox.min.js"></script>
+    <script>
+      // Simple lightbox initializer
+    </script>
+  </body>
 </html>
